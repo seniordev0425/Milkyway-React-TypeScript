@@ -1,0 +1,43 @@
+.login {
+    display: table-cell;
+    width: 100vw;
+    vertical-align: middle;
+    height: 100vh;
+    padding: 1em;
+    &--loading {
+        max-width: 5em;
+        padding: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__display {
+        margin: 0 auto;
+        max-width: 15em;
+    }
+    &__logo {
+        max-width: 11.25em;
+        width: 11.25em;
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 5em;
+    }
+    &__illustration {
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+    &__action {
+        max-width: 25em;
+        margin: 0 auto;
+    }
+    &__register {
+        padding: 1em 0;
+        &__link {
+            color: #005485;
+        }
+    }
+    &__login {
+        text-align: center;
+        margin: .5em 0;
+    }
+}

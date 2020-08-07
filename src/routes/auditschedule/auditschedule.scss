@@ -1,0 +1,84 @@
+.auditschedule {
+    &__loading-overlay {
+        &--false {
+            display: none;
+        }
+        &--true {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(142, 142, 142, 0.5);
+            z-index: 1;
+            min-height: 100vh;
+        }
+    }
+    &__content {
+        &__item {
+            padding: 1em;
+            &--title {
+                font-size: 1.2em;
+                padding-bottom: .5em;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                &__content {
+                    margin-right: .3em;
+                }
+                &__delete {
+                    .btn {
+                        min-width: 0;
+                    }
+                }
+            }
+            &--time {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+            &__days {
+                max-width: 14em;
+                margin-top: .8em;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+            }
+            &__day {
+                background-color: #f2f2f2;
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+                font-size: .9em;
+                // margin: .3em;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                &--active {
+                    color: #ffffff;
+                    background-color: #005485;
+                }
+            }
+        }
+    }
+    &__item {
+        padding: 1em;
+        &--title {
+            font-size: 1.2em;
+        }
+    }
+    &__content {
+        margin-bottom: 2em;
+    }
+}

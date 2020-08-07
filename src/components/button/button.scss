@@ -1,0 +1,118 @@
+.btn {
+  display: inline-block;
+  padding: 0.7125em 1em;
+  font-size: 0.85em;
+  min-width: 10em;
+  min-height: 2.9em;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  &--primary {
+    background-color: #27AEE3;
+    color: #ffffff;
+  }
+  &--round {
+    &:focus {
+      outline:0;
+    }
+    border-radius: 4.6875em;
+    height: 5em;
+    width: 5em;
+    min-width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 2.5em
+    }
+    p {
+      color: black
+    }
+  }
+  &--secondary {
+    background-color: #A2DCF2;
+    color: #ffffff;
+  }
+  &--primary-blue {
+    background-color: #005485;
+    color: #ffffff;
+  }
+  &--primary-blue-light {
+    background-color: #005485;
+    color: #ffffff;
+  }
+  &--primary-yellow {
+    background-color: #005485;
+    color: #ffffff;
+  }
+  &--full-width {
+    width: 100%;
+  }
+  &--link {
+    padding: 0;
+    box-shadow: none;
+    color: #005485;
+  }
+  &--link-danger {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    color: #ef3743;
+  }
+  &--danger {
+    background-color: #ef3743;
+    color: #ffffff;
+  }
+  &--disabled {
+    background-color: #7e7e7e!important;
+  }
+}
+
+// ------------- loading spinner -------------
+
+$loadingSpinnerDiameter: 28px;
+$loadingSpinnerStrokeWidth: 4px;
+$loadingSpinnerStrokeColor: #000000;
+$loadingSpinnerOpacity: 0.8;
+$loadingSpinnerStrokeStyle: solid; // solid, dashed, dotted
+$loadingSpinnerSpeed: 0.7s;
+
+.loadingSpinner {
+  border: $loadingSpinnerStrokeWidth $loadingSpinnerStrokeStyle
+    $loadingSpinnerStrokeColor;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  width: $loadingSpinnerDiameter - ($loadingSpinnerStrokeWidth * 2);
+  height: $loadingSpinnerDiameter - ($loadingSpinnerStrokeWidth * 2);
+  opacity: $loadingSpinnerOpacity;
+  border-radius: 50%;
+  animation: loadingSpinner $loadingSpinnerSpeed infinite linear;
+  -webkit-animation: loadingSpinner $loadingSpinnerSpeed infinite linear;
+}
+
+button .loadingSpinner {
+  margin-top: -$loadingSpinnerDiameter / 2;
+  margin-left: -$loadingSpinnerDiameter / 2;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+}
+
+@keyframes loadingSpinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loadingSpinner {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}

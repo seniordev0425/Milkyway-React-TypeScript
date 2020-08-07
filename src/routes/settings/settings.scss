@@ -1,0 +1,79 @@
+.settings {
+    &--loading {
+      padding: 2em;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+    }
+    &__users {
+        padding: 1em;
+    }
+}
+
+.users {
+    margin-top: 1em;
+    &__title {
+        font-size: .9em;
+        font-weight: bold;
+        margin-bottom: .5em;
+    }
+    &__list {
+        &__empty {
+            padding: 2em;
+            text-align: center;
+            color: #474747;
+        }
+    }
+}
+
+
+
+.userdetails {
+    padding: .5em 0;
+    &__personal {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-right: .3em;
+        &__left {
+            margin-right: .5em;
+        }
+    }
+    &__name {
+        margin-bottom: .1em;
+        color: #313131;
+        line-height: 1.2;
+        font-size: .8em;
+    }
+    &__time {
+        font-size: .6em;
+        color: #474747;
+    }
+    &--pending, &--approved {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: .7em 0;
+        border: 1px solid #313131;
+        border-radius: 4px;
+        padding: .5em;
+    }
+    &__cta {
+        margin-left: .3em;
+        max-width: 10em;
+    }
+    &--store {
+        padding: .3em 1em;
+        &__content {
+            background-color: #27AEE3;
+            color: #ffffff;
+            font-size: .7em;
+            border-radius: 4px;
+            padding: 4px 6px;
+        }
+    }
+}

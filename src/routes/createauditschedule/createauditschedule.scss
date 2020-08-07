@@ -1,0 +1,55 @@
+.createauditschedule {
+    max-width: 50em;
+    &__content {
+        margin: 1em 0;
+        &__item {
+            padding: .3em 1em;
+            &__content {
+                input {
+                    font-size: .9em;
+                    border-radius: 4px;
+                    box-shadow: inset 0 2px 2px #e9e9e9;
+                    border: 1px solid #aeaeae;
+                    line-height: 16px;
+                    padding: 6px 10px 5px;
+                    margin: .5em 0;
+                }
+            }
+            &--time {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+            &__days {
+                max-width: 14em;
+                margin-top: .8em;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+            }
+            &__day {
+                background-color: #f2f2f2;
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+                font-size: .9em;
+                // margin: .3em;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                &--active {
+                    color: #ffffff;
+                    background-color: #005485;
+                }
+            }
+        }
+    }
+    &__cta {
+        margin: 1em 0;
+    }
+}

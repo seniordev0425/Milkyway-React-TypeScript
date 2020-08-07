@@ -1,0 +1,87 @@
+@import "../../mixin.scss";
+
+.auditschedules {
+    &--loading {
+      padding: 2em;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+    }
+    &__header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__title {
+            font-weight: bold;
+        }
+    &__content {
+      margin-bottom: 2em;
+    }
+    &--empty {
+        margin: 0 auto;
+        text-align: center;
+        padding: 1em;
+    }
+    &__item {
+        padding: 1.2em 1em;
+        border-bottom: 1px solid #A2DCF2;
+        &__title {
+            font-size: 1.1em;
+        }
+        &__days {
+            max-width: 12em;
+            margin-top: .5em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        &__day {
+            background-color: #f2f2f2;
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+            font-size: .7em;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            &--active {
+                color: #ffffff;
+                background-color: #005485;
+            }
+        }
+    }
+    &__cta {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+        z-index: 999;
+        right: 0;        
+        @media (min-width: 800px) {
+          width: 81vw;
+          right:0;
+        }
+
+        &__item {
+            width: 100%;
+            text-align: center;
+        }
+        &__button {
+            border: 1px solid #f2f2f2;
+            box-shadow: none;
+            border-radius: 0;
+            width: 100%;
+            font-size: 1em;
+            border-left: none;
+        }
+    }
+}

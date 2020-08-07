@@ -1,0 +1,62 @@
+@import "../../mixin.scss";
+
+.home {
+    &__header {
+        padding: 1em;
+        &__paragraph {
+            &--greeting {
+                font-size: 1.5em;
+            }
+            &--name {
+                font-size: 2em;
+            }
+        }
+    }
+    &__content {
+        align-items: center;
+        text-align: center;
+        @media(min-width: 991px){
+            flex-direction: row;
+        }
+        flex-direction: column;
+        justify-content: center;
+        &--cta {
+            margin: 1em 0;
+        }
+    }
+    &__illustration {
+        margin: 0 auto;
+        padding: 1em;
+        max-width: 15em;
+        position: relative;
+        &__client {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 33%;
+            left: 31%;
+            &__logo {
+                max-width: 4em;
+            }
+            &__name {
+                font-size: .8rem;
+            }
+        }
+    }
+    &__cta {
+        padding: .5em 1em;
+        flex: 1 1;
+        display: inline-flex;
+        width: 33%;
+        align-items: center;
+        button.btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            min-width: auto;
+            margin: auto;
+        }
+    }
+}

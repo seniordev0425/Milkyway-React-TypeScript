@@ -1,0 +1,23 @@
+.accountdeleted {
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 50em;
+    &__logo {
+        max-width: 10em;
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+    &__illustration {
+        margin-top: 1em;
+        margin-bottom: 2em;
+        max-width: 20em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    &__cta {
+        margin: 1em 0;
+    }
+}
